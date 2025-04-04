@@ -18,19 +18,11 @@
     </style>
 </head>
 <body>
-    <button onclick="goFullscreen()">Go Fullscreen</button>
+    <button onclick="openFullscreenPage()">Go Fullscreen</button>
 
     <script>
-        function goFullscreen() {
-            if (document.documentElement.requestFullscreen) {
-                document.documentElement.requestFullscreen();
-            } else if (document.documentElement.mozRequestFullScreen) { // Firefox
-                document.documentElement.mozRequestFullScreen();
-            } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari, Opera
-                document.documentElement.webkitRequestFullscreen();
-            } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
-                document.documentElement.msRequestFullscreen();
-            }
+        function openFullscreenPage() {
+            window.open("https://ericloveday.github.io/fullscreen-button/fullscreen.html", "_blank");
         }
     </script>
 </body>
